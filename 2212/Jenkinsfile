@@ -54,7 +54,7 @@ pipeline {
             steps {
                 // DockerHub로 이미지 업로드
                 script{
-                    if (DOCKERHUB_USERNAME == "academyitwill") {
+                    if (DOCKERHUB_USERNAME != "academyitwill") {
                         echo "docker push ${DOCKERHUB_USERNAME}/api-tester:v1.0.0"
                     } else {
                         sh "docker push ${DOCKERHUB_USERNAME}/api-tester:v1.0.0"
