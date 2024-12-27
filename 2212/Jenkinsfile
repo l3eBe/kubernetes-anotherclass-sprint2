@@ -85,7 +85,7 @@ pipeline {
                 sh "kubectl get -f ./${CLASS_NUM}/deploy/k8s/secret.yaml"
                 sh "kubectl get -f ./${CLASS_NUM}/deploy/k8s/service.yaml"
                 sh "kubectl get -f ./${CLASS_NUM}/deploy/k8s/deployment.yaml"
-		sh "kubectl rollout restart -n anotherclass-221 deployment api-tester-2211"
+		sh "kubectl rollout restart -n anotherclass-221 deployment api-tester-2212"
             }
         }
     }
