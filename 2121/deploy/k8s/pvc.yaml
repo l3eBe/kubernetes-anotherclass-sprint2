@@ -16,6 +16,7 @@ spec:
       storage: 2G
   accessModes:
     - ReadWriteOnce
+  volumeName: api-tester-2121-files 
   selector:
     matchLabels:
       part-of: k8s-anotherclass
