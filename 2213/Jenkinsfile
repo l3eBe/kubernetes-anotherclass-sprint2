@@ -3,7 +3,7 @@ pipeline {
 
     parameters {
         // GitHub  사용자명 입력
-        string(name: 'GITHUB_USERNAME',  defaultValue: '', description: 'GitHub  사용자명을 입력하세요.')
+        string(name: 'GITHUB_USERNAME',  defaultValue: '2025-01-JAVA-DEVELOPER-159', description: 'GitHub  사용자명을 입력하세요.')
     }
 
     environment {
